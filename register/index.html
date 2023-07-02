@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>sneak3rs</title>
+    <style>
+      .disabled {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form id="register" onsubmit="register(event)">
+        <input
+          type="text"
+          name="nome_completo"
+          id="nome_completo"
+          placeholder="Digite seu nome"
+        />
+        <input
+          type="text"
+          name="telefone"
+          id="telefone"
+          placeholder="Digite seu telefone"
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Digite seu email"
+        />
+        <input type="date" name="data_nascimento" id="data_nascimento" />
+        <input
+          type="text"
+          name="usuario"
+          id="usuario"
+          placeholder="Digite seu usuario"
+        />
+        <input
+          type="password"
+          name="senha"
+          id="senha"
+          placeholder="Digite sua senha"
+        />
+        <div>
+          <button type="reset">Cancelar</button>
+          <button type="submit">Cadastrar</button>
+        </div>
+      </form>
+
+      <div class="disabled" id="dados">
+        <div>
+          <p>Nome:</p>
+          <strong id="nome_valor"></strong>
+        </div>
+        <div>
+          <p>Telefone:</p>
+          <strong id="telefone_valor"></strong>
+        </div>
+        <div>
+          <p>Email:</p>
+          <strong id="email_valor"></strong>
+        </div>
+        <div>
+          <p>Data Nascimento:</p>
+          <strong id="data_valor"></strong>
+        </div>
+        <div>
+          <p>Usuario:</p>
+          <strong id="usuario_valor"></strong>
+        </div>
+        <div>
+          <p>Senha:</p>
+          <strong id="senha_valor"></strong>
+        </div>
+
+        <button type="button" onclick="finalizarCompra()">
+          Finalizar compra
+        </button>
+      </div>
+    </main>
+
+    <script src="./register.js"></script>
+  </body>
+</html>

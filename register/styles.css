@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --brand-color: #9333ea;
+  --brand-color-light: #A855F7;
+  --brand-color-lighter: #C084FC:
+  --text-color-primary: #f9fafb;
+  --text-color-secondary: #e4e4e7;
+  --stroke-color: #3f3f46;
+  --surface-color: #18181b;
+}
+
+body {
+  background-color: var(--surface-color);
+  color: var(--text-color-primary);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form, #dados {
+  display: grid;
+  width: 100%;
+  max-width: 480px;
+
+  gap: 16px;
+}
+
+form input {
+  width: 100%;
+  padding: 8px 24px;
+
+  border-radius: 8px;
+
+  border: 0;
+  outline: 0;
+
+  color: var(--surface-color);
+}
+
+form div {
+  display: flex;
+  gap: 12px;
+}
+
+button {
+  width: 100%;
+  padding: 12px 24px;
+
+  border-radius: 8px;
+
+  border: 0;
+  outline: 0;
+
+  color: var(--text-color-secondary);
+  background-color: var(--brand-color);
+}
+
+button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+#dados {
+  color: var(--text-color-secondary);
+}
+
+#dados div {
+  display: flex;
+  gap: 16px;
+
+  border-bottom: 1px solid var(--brand-color);
+
+  padding: 12px;
+
+  display: flex;
+
+  justify-content: center;
+}
